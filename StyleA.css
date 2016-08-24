@@ -1,0 +1,56 @@
+body {
+    background-color: antiquewhite;
+    background-repeat: no-repeat;
+    background-blend-mode: color-dodge;
+}
+
+#page-wrap {
+    background-color: white;
+    width: 75%;
+    margin: 0 auto;
+}
+
+ul.navigation-list {
+    background-color: black;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+
+}
+
+ul.navigation-list>li {
+    float: left;
+}
+
+ul.navigation-list>li a {
+    border-right: solid 2px white;
+    display: block;
+    color: white;
+    padding: 18px 45px;
+    text-align: center;
+    text-decoration: none;
+}
+
+ul.navigation-list>li a:hover {
+    background-color: plum;
+
+}
+
+div.front-page-information {
+    padding: 10px;
+}
+
+div.front-page-information>p {
+    border-top: solid black 4px;
+    padding-top: 15px;
+    text-align: left;
+    width: 50%;
+    overflow: hidden;
+}
+
+#right-side-home {
+    border: solid 3px black;
+    float: right;
+    padding-right: 15px;
+}
