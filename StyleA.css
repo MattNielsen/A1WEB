@@ -37,6 +37,10 @@ ul.navigation-list>li a:hover {
 
 }
 
+ul.contact-information>li {
+    padding: 20px;
+}
+
 div.front-page-information {
     padding: 10px;
 }

@@ -16,6 +16,36 @@
         <li><a href ="ContactInformation.html"> Contact us</a></li>
         <li><a href = "SeasonLadder.html"> Season Ladder</a></li>
     </ul>
+    <form action="http://localhost:63344/Assignment1/post.php" method="post">
+        First Name: <input type="text" name="fName"><br>
+        Last Name: <input type="text" name="lName"><br>
+        E-mail: <input type="text" name="email"><br>
+        What day do you wish to play on? :<br> <input type="radio" name="Day" value="monday"> Monday <br>
+        <input type="radio" name="Day" value="tuesday"> Tuesday <br>
+        <input type="radio" name="Day" value="wednesday"> Wednesday <br>
+        <input type="radio" name="Day" value="thursday"> Thursday <br>
+        <input type="radio" name="Day" value="friday"> Friday <br>
+        <input type="radio" name="Day" value="saturday"> Saturday <br>
+        Time slot: <input type="radio" name="Time" value="afternoon"> Afternoon
+        <input type="radio" name="Time" value="evening"> Evening
+        <input type="submit"> <br>
+
+    </form>
+
+    <!--<script type=text/javascript>-->
+        <!--function getName() {-->
+            <!--var input = document.getElementById("userInputFunction").value;-->
+            <!--if (input.length === 0) {-->
+                <!--alert("Please enter a valid input");-->
+                <!--return;-->
+            <!--}-->
+            <!--document.getElementById("result").innerHTML = "You have entered " + input-->
+        <!--}-->
+    <!--</script>-->
+    <!--<h1 id="result" >Example</h1>-->
+    <!--<input type="text" id="userInputFunction" autofocus value = "Enter your name here please thanks."/>-->
+    <!--<input type="submit" value="Submit" onclick="getName()"/>-->
+
 </div>
 
 </body>

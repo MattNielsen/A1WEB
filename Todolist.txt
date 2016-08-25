@@ -1,0 +1,15 @@
+* Incorporate images succinctly (with credit where due).
+
+* Add Highscore tables to highscore page.
+
+* Rewrite / condense supplied writing (How to play, Guidelines, What is vollyball).
+
+* Add security checks to POST forms.
+
+* 2nd pass on website layout (focus on simple delivery of information).
+
+* Implement "do you agree to guidelines?" box on Registration page.
+
+* Create a redirect / 402 page to handle errors and temporarily broken links.
+
+* Revisit siteplan and fill in any gaps.
