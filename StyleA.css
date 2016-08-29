@@ -4,17 +4,24 @@ body {
     background-blend-mode: color-dodge;
 }
 
+h1 {
+    text-align: center;
+}
+
 #page-wrap {
     background-color: white;
-    width: 75%;
+    width: 66%;
+    min-width: 1277px;
     margin: 0 auto;
+
 }
 
 ul.navigation-list {
     background-color: black;
+    display: block;
     list-style-type: none;
     margin: 0;
-    padding: 0;
+    padding: 15px;
     overflow: hidden;
 
 }
@@ -25,9 +32,9 @@ ul.navigation-list>li {
 
 ul.navigation-list>li a {
     border-right: solid 2px white;
-    display: block;
     color: white;
-    padding: 18px 45px;
+    margin: auto;
+    padding: 45px;
     text-align: center;
     text-decoration: none;
 }
@@ -53,8 +60,86 @@ div.front-page-information>p {
     overflow: hidden;
 }
 
-#right-side-home {
+#announcement-box {
     border: solid 3px black;
     float: right;
     padding-right: 15px;
+}
+
+#announcement-box ul li {
+
+}
+
+table.season-ladder-table {
+    background-color: black;
+    border: 7px solid white;
+    color: ivory;
+    width: 33%;
+    margin: 0 auto;
+    min-width: 840px;
+    padding: 30px;
+    table-layout: auto;
+
+}
+
+table.season-ladder-table thead {
+    background-color: blueviolet;
+    border: 2px solid black;
+}
+
+table.season-ladder-table tr th, table.season-ladder-table tr td {
+    border: 1px outset white;
+    padding: 9px 15px;
+}
+
+form.register-form {
+    background-color: black;
+    border: 7px solid white;
+    color: ivory;
+    width: 33%;
+    margin: 0 auto;
+    min-width: 840px;
+    padding: 30px 30px 300px;
+}
+
+div.registration-user-details {
+    border: 1px solid white;
+    padding: 10px;
+
+}
+
+ div.registration-user-details p {
+    padding: 2px;
+    width: 33%;
+
+}
+
+div.registration-user-day {
+    border: 1px solid white;
+}
+
+div.registration-user-time {
+    border: 1px solid white;
+}
+
+div.registration-accept {
+    text-align: center;
+}
+/*form.register-form input {*/
+    /*padding: 10px;*/
+    /*margin: 20px;*/
+/*}*/
+
+p#guideline-text {
+    border: 4px outset white;
+    margin: 0 auto;
+    padding: 15px;
+    width: 40%;
+    text-align: justify;
+}
+
+p#guideline-header {
+    border-bottom: 1px solid white;
+    font-size: 4ch;
+    text-align: center;
 }
