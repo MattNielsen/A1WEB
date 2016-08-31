@@ -1,19 +1,28 @@
 body {
-    background-color: antiquewhite;
-    background-repeat: no-repeat;
-    background-blend-mode: color-dodge;
+    background: bisque; /*old Internet Explorer compatibility*/
+    background: -webkit-radial-gradient(white, bisque, bisque, white);
+    background: -moz-radial-gradient(white, bisque, bisque, white);
+    background: radial-gradient(white, bisque, bisque, white);
+    background-size: 100%;
 }
 
-h1 {
-    text-align: center;
-}
-
-#page-wrap {
-    background-color: white;
-    width: 66%;
-    min-width: 1277px;
+div.page-wrap {
+    background: white;
+    background: url("Res/BeachVolleyball/beachNet-pagewrap-50transparent.jpg");
     margin: 0 auto;
+    min-height: 1200px;
+    min-width: 1277px;
+    width: 66%;
+}
 
+div.page-wrap p {
+    width: 50%;
+}
+
+div.large-paragraph {
+    background: #f7f3fa;
+    font-size: 2ch;
+    word-spacing: 1px;
 }
 
 ul.navigation-list {
@@ -23,7 +32,6 @@ ul.navigation-list {
     margin: 0;
     padding: 15px;
     overflow: hidden;
-
 }
 
 ul.navigation-list>li {
@@ -41,7 +49,26 @@ ul.navigation-list>li a {
 
 ul.navigation-list>li a:hover {
     background-color: plum;
+    background-size: 30px 30px;
 
+}
+
+div.header-box {
+    background: url("Res/BeachVolleyball/sandheader.jpg");
+    border: 2px solid black;
+    margin: 0 auto;
+    min-height: 112px;
+    min-width: 1273px;
+    padding-top: 25px;
+    text-align: center;
+    width: 66%;
+}
+
+div.header-box h1 {
+    background: black;
+    color: ivory;
+    display: inline-block;
+    padding: 0 10px;
 }
 
 ul.contact-information>li {
@@ -49,25 +76,48 @@ ul.contact-information>li {
 }
 
 div.front-page-information {
-    padding: 10px;
+    background: ghostwhite;
+    border: solid 3px black;
+    float: left;
+    margin: 15px 10px;
+    /*overflow: inherit;*/
+    padding: 0 10px;
+    width: 392px;
 }
 
-div.front-page-information>p {
-    border-top: solid black 4px;
-    padding-top: 15px;
+div.front-page-information>p, div.front-page-information>ul>li {
+    padding-top: 5px;
     text-align: left;
-    width: 50%;
-    overflow: hidden;
+    width: 350px;
+    /*overflow: hidden;*/
 }
 
-#announcement-box {
+div.announcement-box {
     border: solid 3px black;
     float: right;
-    padding-right: 15px;
+    margin: 15px 10px;
+    padding: 5px;
+    width: 393px;
+
 }
 
-#announcement-box ul li {
+div.announcement-box ul li {
+    background: lightgrey;
+    border: 1px solid black;
+    padding: 30px;
+    margin: 15px;
+    width: 200px;
+}
 
+div.large-paragraph {
+    border: solid 3px black;
+    margin: 15px;
+    padding: 0 10px;
+    width: 627px;
+}
+
+div.large-paragraph p {
+    width: 600px;
 }
 
 table.season-ladder-table {
@@ -123,14 +173,11 @@ div.registration-user-time {
 }
 
 div.registration-accept {
+    border: solid 1px white;
     text-align: center;
 }
-/*form.register-form input {*/
-    /*padding: 10px;*/
-    /*margin: 20px;*/
-/*}*/
 
-p#guideline-text {
+div.registration-accept p#guideline-text {
     border: 4px outset white;
     margin: 0 auto;
     padding: 15px;
@@ -138,8 +185,76 @@ p#guideline-text {
     text-align: justify;
 }
 
-p#guideline-header {
+div.registration-accept p#guideline-header {
     border-bottom: 1px solid white;
     font-size: 4ch;
     text-align: center;
+    width: 100%;
+}
+
+p#guideline-agree-box, p#registration-form-submit {
+    text-align: center;
+    width: 100%;
+}
+
+div.registration-accept input {
+    text-align: center;
+    font-size: 4ch;
+}
+
+div.guideline-paragraph {
+    background: ghostwhite;
+    border: solid 3px black;
+    display: inline-block;
+    margin: 0 auto;
+    padding: 10px;
+    text-align: center;
+}
+
+div.guideline-paragraph p {
+    display: inline-block;
+    text-align: justify;
+    width: 40%;
+    padding: 15px 70px;
+}
+
+ul.contact-information li {
+    font-size: 3ch;
+    text-align: justify;
+}
+
+div.center-small-image-box {
+    display: inline-block;
+    margin: 15px 5px ;
+}
+
+div.right-image-box {
+    border: solid 3px black;
+    float: right;
+    margin: 15px;
+    padding: 0 auto;
+}
+
+div.right-small-image-box {
+    border: solid 3px black;
+    height: 196px;
+    margin: 30px 15px;
+    width: 195px;
+    float: right;
+}
+
+div.bottom-image-box {
+    border: solid 3px black;
+    height: 675px;
+    margin: 0 auto;
+    margin-top: 50px;
+    width: 900px;
+}
+
+footer {
+    background: black;
+    color: white;
+    margin: 0 auto;
+    min-width: 1277px;
+    width: 66%;
 }

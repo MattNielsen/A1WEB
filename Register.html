@@ -6,65 +6,55 @@
     <title>Register now for Slammer's beach vollyball</title>
 </head>
 <body>
-<div id="page-wrap">
-    <ul class="navigation-list">
-        <li><a class="active" href="index.html">Home</a></li>
-        <li><a href ="WhatIsVollyball.html">What is Vollyball?</a></li>
-        <li><a href ="HowToPlay.html"> How to play</a></li>
-        <li><a href ="Register.html"> Register now!</a></li>
-        <li><a href ="GuideLines.html"> GuideLines</a></li>
-        <li><a href ="ContactInformation.html"> Contact us</a></li>
-        <li><a href = "SeasonLadder.html"> Season Ladder</a></li>
-    </ul>
-    <h1>Slammer's Registration form</h1>
-    <form class="register-form" action="http://localhost:63344/Assignment1/post.php" method="post">
-        <div class="registration-user-details">
-            <p>First Name: <input title="fname" type="text" name="fName"></p>
-            <p>Last Name: <input type="text" name="lName"></p>
-            <p>E-mail: <input type="text" name="email"></p>
-        </div>
-        <div class="registration-user-day">
-            <p>What day do you wish to play on? :</p>
-            <p> <input type="radio" name="Day" value="monday"> Monday </p>
-            <p><input type="radio" name="Day" value="tuesday"> Tuesday </p>
-            <p><input type="radio" name="Day" value="wednesday"> Wednesday </p>
-            <p><input type="radio" name="Day" value="thursday"> Thursday </p>
-            <p><input type="radio" name="Day" value="friday"> Friday </p>
-            <p><input type="radio" name="Day" value="saturday"> Saturday </p>
-        </div>
-        <div class="registration-user-time">
-            <p>Time slot: </p>
-            <p><input type="radio" name="Time" value="afternoon"> Afternoon </p>
-            <p><input type="radio" name="Time" value="evening"> Evening </p>
-        </div>
-        <div class="registration-accept">
-        <p id="guideline-header">Guide Lines.</p>
-            <p id="guideline-text">        Participants in Slammers Beach Volleyball play at their own risk.
-                Anyone playing is responsible for their own safety and should only play if they are capable.
-                Check with your doctor before you begin.
-                Game fees must be paid prior to the start of the game.
-                Games may be cancelled by players up to 4 hours before hand to get a refund.
-                Without 4 hours' notice, participants will forfeit the game and be charged 50% of the game fee.</p>
-            <p><input type="checkbox" name="guideline-agree" value="agree"> By clicking this box, you agreeing to the guidelines.</p>
-            <p><input type="submit"></p>
-        </div>
-    </form>
-
-    <!--<script type=text/javascript>-->
-        <!--function getName() {-->
-            <!--var input = document.getElementById("userInputFunction").value;-->
-            <!--if (input.length === 0) {-->
-                <!--alert("Please enter a valid input");-->
-                <!--return;-->
-            <!--}-->
-            <!--document.getElementById("result").innerHTML = "You have entered " + input-->
-        <!--}-->
-    <!--</script>-->
-    <!--<h1 id="result" >Example</h1>-->
-    <!--<input type="text" id="userInputFunction" autofocus value = "Enter your name here please thanks."/>-->
-    <!--<input type="submit" value="Submit" onclick="getName()"/>-->
-
-</div>
-
+    <div class="page-wrap">
+        <ul class="navigation-list">
+            <li><a class="active" href="index.html">Home</a></li>
+            <li><a href ="WhatIsVollyball.html">What is Vollyball?</a></li>
+            <li><a href ="HowToPlay.html"> How to play</a></li>
+            <li><a href ="Register.html"> Register now!</a></li>
+            <li><a href ="GuideLines.html"> GuideLines</a></li>
+            <li><a href ="ContactInformation.html"> Contact us</a></li>
+            <li><a href = "SeasonLadder.html"> Season Ladder</a></li>
+        </ul>
+        <div class="header-box">
+            <h1> Slammer's Vollyball Registration.</h1>
+        </div>    <form class="register-form" action="http://localhost:63344/Assignment1/post.php" method="post">
+            <div class="registration-user-details">
+                <p>First Name: <input title="fname" type="text" name="fName"></p>
+                <p>Last Name: <input type="text" name="lName"></p>
+                <p>E-mail: <input type="text" name="email"></p>
+            </div>
+            <div class="registration-user-day">
+                <p>What day do you wish to play on? :</p>
+                <p> <input type="radio" name="Day" value="monday"> Monday </p>
+                <p><input type="radio" name="Day" value="tuesday"> Tuesday </p>
+                <p><input type="radio" name="Day" value="wednesday"> Wednesday </p>
+                <p><input type="radio" name="Day" value="thursday"> Thursday </p>
+                <p><input type="radio" name="Day" value="friday"> Friday </p>
+                <p><input type="radio" name="Day" value="saturday"> Saturday </p>
+            </div>
+            <div class="registration-user-time">
+                <p>Time slot: </p>
+                <p><input type="radio" name="Time" value="afternoon"> Afternoon </p>
+                <p><input type="radio" name="Time" value="evening"> Evening </p>
+            </div>
+            <div class="registration-accept">
+                <p id="guideline-header">Guide Lines.</p>
+                <p id="guideline-text">        Participants in Slammers Beach Volleyball play at their own risk.
+                    Anyone playing is responsible for their own safety and should only play if they are capable.
+                    Check with your doctor before you begin.
+                    Game fees must be paid prior to the start of the game.
+                    Games may be cancelled by players up to 4 hours before hand to get a refund.
+                    Without 4 hours' notice, participants will forfeit the game and be charged 50% of the game fee.</p>
+                <p id="guideline-agree-box"><input type="checkbox" name="guideline-agree" value="agree"> By clicking this box, you agree to the above guidelines.</p>
+                <p id="registration-form-submit"><input type="submit"></p>
+            </div>
+        </form>
+    </div>
+    <footer>
+        <p>Copyright © 2016 Slammer's Vollyball | 123 Pokemund Street, Cairsville.</p>
+        <!--ready-to-implement facebook and twitter linkage-->
+        <!--<a href="https://www.facebook.com/" target="_blank">Follow us on facebook or twitter</a>-->
+    </footer>
 </body>
 </html>

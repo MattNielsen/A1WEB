@@ -16,4 +16,4 @@
 
 * Format registration form for full readability and function. X
 
-* Add announcement bar / tab to front page.
+* Add announcement bar / tab to front page. X
