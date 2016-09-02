@@ -291,8 +291,10 @@ div.center-small-image-box {
 div.right-image-box {
     border: solid 3px black;
     float: right;
+    height: 900px;
     margin: 15px;
     padding: 0 auto;
+    width: 600px;
 }
 
 div.right-small-image-box {
@@ -317,4 +319,9 @@ footer {
     margin: 0 auto;
     min-width: 1277px;
     width: 66%;
+}
+
+p.copy-right-statement {
+    font-size: 70%;
+    text-align: justify;
 }
