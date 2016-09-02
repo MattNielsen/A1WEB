@@ -30,7 +30,7 @@ ul.navigation-list {
     display: block;
     list-style-type: none;
     margin: 0;
-    padding: 15px;
+    padding: 15px 20px;
     overflow: hidden;
 }
 
@@ -42,10 +42,18 @@ ul.navigation-list>li a {
     border-right: solid 2px white;
     color: white;
     margin: auto;
-    padding: 45px;
+    padding: 47px;
     text-align: center;
     text-decoration: none;
 }
+
+ul.navigation-list li a.nav-end {
+    border-right: 0;
+    color: white;
+    margin: auto;
+    padding: 45px;
+    text-align: center;
+    text-decoration: none;}
 
 ul.navigation-list>li a:hover {
     background-color: plum;
@@ -93,20 +101,26 @@ div.front-page-information>p, div.front-page-information>ul>li {
 }
 
 div.announcement-box {
+    background: ghostwhite;
     border: solid 3px black;
     float: right;
     margin: 15px 10px;
     padding: 5px;
+    text-align: center;
     width: 393px;
 
 }
 
 div.announcement-box ul li {
-    background: lightgrey;
+    background: white;
     border: 1px solid black;
-    padding: 30px;
-    margin: 15px;
-    width: 200px;
+    padding: 10px;
+    margin: 0 5px;
+    width: 250px;
+}
+
+div.announcement-box h3 {
+
 }
 
 div.large-paragraph {
@@ -122,10 +136,10 @@ div.large-paragraph p {
 
 table.season-ladder-table {
     background-color: black;
-    border: 7px solid white;
     color: ivory;
     width: 33%;
     margin: 0 auto;
+    margin-top: 15px;
     min-width: 840px;
     padding: 30px;
     table-layout: auto;
@@ -133,23 +147,59 @@ table.season-ladder-table {
 }
 
 table.season-ladder-table thead {
-    background-color: blueviolet;
+    background-color: purple;
     border: 2px solid black;
 }
 
 table.season-ladder-table tr th, table.season-ladder-table tr td {
     border: 1px outset white;
-    padding: 9px 15px;
+    padding: 10px 15px;
+}
+
+table.season-ladder-table tr:nth-last-child(n+8):nth-last-child(n+7) {
+    animation-name: color-change;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+}
+
+@-webkit-keyframes color-change {
+    from {color: gold}
+    to {color: white;}
+}
+
+@-moz-keyframes color-change {
+    from {color: black;}
+    to {color: darkgrey;}
+}
+
+@-ms-keyframes color-change {
+    from {color: black;}
+    to {color: darkgrey;}
+}
+
+@-o-keyframes color-change {
+    from {color: black;}
+    to {color: darkgrey;}
+}
+
+@keyframes color-change {
+    from {color: gold}
+    to {color: white;}
 }
 
 form.register-form {
     background-color: black;
-    border: 7px solid white;
     color: ivory;
     width: 33%;
     margin: 0 auto;
+    margin-top: 15px;
     min-width: 840px;
-    padding: 30px 30px 300px;
+    padding: 30px 30px 1800px;
+}
+
+form.register-form h2 {
+    text-align: center;
 }
 
 div.registration-user-details {
@@ -160,7 +210,7 @@ div.registration-user-details {
 
  div.registration-user-details p {
     padding: 2px;
-    width: 33%;
+    width: 50%;
 
 }
 
@@ -200,6 +250,16 @@ p#guideline-agree-box, p#registration-form-submit {
 div.registration-accept input {
     text-align: center;
     font-size: 4ch;
+}
+
+p.required-field {
+    color: lightgoldenrodyellow;
+    font-size: 75%;
+}
+
+span.required-denote {
+    color: lightgoldenrodyellow;
+    font-size: 75%;
 }
 
 div.guideline-paragraph {

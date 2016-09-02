@@ -8,24 +8,29 @@
 <body>
     <div class="page-wrap">
         <ul class="navigation-list">
-            <li><a class="active" href="index.html">Home</a></li>
+            <li><a href="index.html">Home</a></li>
             <li><a href ="WhatIsVollyball.html">What is Vollyball?</a></li>
             <li><a href ="HowToPlay.html"> How to play</a></li>
             <li><a href ="Register.html"> Register now!</a></li>
             <li><a href ="GuideLines.html"> GuideLines</a></li>
             <li><a href ="ContactInformation.html"> Contact us</a></li>
-            <li><a href = "SeasonLadder.html"> Season Ladder</a></li>
+            <li><a class="nav-end" href="SeasonLadder.html"> Season Ladder</a></li>
         </ul>
         <div class="header-box">
             <h1> Slammer's Vollyball Registration.</h1>
-        </div>    <form class="register-form" action="http://localhost:63344/Assignment1/post.php" method="post">
+        </div>
+        <form class="register-form" action="http://localhost:63344/Assignment1/post.php" method="post">
+            <h2>Sign up today!</h2>
+            <p>Please fill in all of the boxes below to register</p>
+            <p class="required-field">* denotes a required field.</p>
             <div class="registration-user-details">
-                <p>First Name: <input title="fname" type="text" name="fName"></p>
-                <p>Last Name: <input type="text" name="lName"></p>
+                <p>First Name: <input title="fname" type="text" name="fName"><span class="required-denote"> *</span></p>
+                <p>Last Name: <input type="text" name="lName"><span class="required-denote"> *</span></p>
+                <p>Phone Number: <input type="text" name="contact-number"><span class="required-denote"> *</span></p>
                 <p>E-mail: <input type="text" name="email"></p>
             </div>
             <div class="registration-user-day">
-                <p>What day do you wish to play on? :</p>
+                <p>What day do you wish to play on? : <span class="required-denote"> *</span></p>
                 <p> <input type="radio" name="Day" value="monday"> Monday </p>
                 <p><input type="radio" name="Day" value="tuesday"> Tuesday </p>
                 <p><input type="radio" name="Day" value="wednesday"> Wednesday </p>
@@ -34,19 +39,20 @@
                 <p><input type="radio" name="Day" value="saturday"> Saturday </p>
             </div>
             <div class="registration-user-time">
-                <p>Time slot: </p>
+                <p>Time slot: <span class="required-denote"> *</span></p>
                 <p><input type="radio" name="Time" value="afternoon"> Afternoon </p>
                 <p><input type="radio" name="Time" value="evening"> Evening </p>
             </div>
             <div class="registration-accept">
-                <p id="guideline-header">Guide Lines.</p>
+                <p id="guideline-header">Guide Lines</p>
                 <p id="guideline-text">        Participants in Slammers Beach Volleyball play at their own risk.
                     Anyone playing is responsible for their own safety and should only play if they are capable.
                     Check with your doctor before you begin.
                     Game fees must be paid prior to the start of the game.
                     Games may be cancelled by players up to 4 hours before hand to get a refund.
                     Without 4 hours' notice, participants will forfeit the game and be charged 50% of the game fee.</p>
-                <p id="guideline-agree-box"><input type="checkbox" name="guideline-agree" value="agree"> By clicking this box, you agree to the above guidelines.</p>
+                <p id="guideline-agree-box"><input type="checkbox" name="guideline-agree" value="agree"> By clicking
+                    this box, you agree to the above guidelines.<span class="required-denote"> *</span></p>
                 <p id="registration-form-submit"><input type="submit"></p>
             </div>
         </form>
